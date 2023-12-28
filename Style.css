@@ -372,7 +372,7 @@ li a {
 }
 
 .footer {
-    background-color: #000000;
+    background-color: black;
     border-radius: 10px;
     box-shadow: 0px -9px 10px -3px rgba(255, 255, 255, 0.1), 0px -10px 10px -3px rgba(255, 255, 255, 0.1);
     padding: 40px 0px 40px;
@@ -387,6 +387,9 @@ li a {
 
 .footer h1,
 .footer p {
+    background: linear-gradient(to right, #2121f3, #08e6ff, #cf23cf, #eedd44);
+    -webkit-background-clip: text;   
+    -webkit-text-fill-color: transparent; 
     margin: 10px auto;
 }
 
@@ -412,7 +415,6 @@ li a {
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
-
   
 @media only screen and (max-width: 1300px) {
     .about {

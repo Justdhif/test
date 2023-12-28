@@ -20,7 +20,7 @@ var container = document.querySelector('.container-project')
 
 data.forEach(element => {
     container.innerHTML +=
-    `<div class="project">
+    `<div class="project" data-aos="fade-left" data-aos-duration="3000">
     <div class="img-project">
         <img src="`+element.img1+`" alt="">
         <img src="${element.img2}" alt="">
