@@ -31,6 +31,6 @@ data.forEach(element => {
         <h1>${element.title}</h1>
         <p>${element.desc}</p>
     </div>
-    <a href="${element.for}"><button class="read-more">Read More</button></a>
+    <a href="${element.for}" target="_blank"><button class="read-more">Read More</button></a>
 </div>`
 });
