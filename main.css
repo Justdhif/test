@@ -104,110 +104,6 @@ li a {
     background-color: white;
 }
 
-.main-hero {
-    padding-top: 50px;
-    height: 80vh;
-    text-align: center;
-    font-family: 'Mulish';
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.main-hero h1 {
-    font-size: 70px;
-}
-
-.about {
-    padding: 70px;
-    box-sizing: border-box;
-    background-color: rgb(0, 90, 139);
-    width: 85%;
-    margin: 85%;
-    margin: 50px auto 100px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-    box-shadow: 0px -9px 10px -3px rgba(0, 0, 0, 0.404), 0px -10px 10px -3px rgba(0, 0, 0, 0.404);
-}
-
-.img-hero {
-    width: 25%;
-}
-
-.img-hero img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 100%;
-    box-shadow: 0px -9px 10px -3px rgba(0, 0, 0, 0.404), 0px -10px 10px -3px rgba(0, 0, 0, 0.404);
-}
-
-.desc-hero {
-    width: 63%;
-    color: white;
-}
-
-.desc-hero h1 {
-    font-family: 'Mulish';
-    font-size: 40px;
-}
-
-.desc-hero h2 {
-    margin: 7px 0px;
-    font-family: 'Mulish';
-    font-size: 25px;
-}
-
-.desc-hero p {
-    line-height: 25px;
-    letter-spacing: 1.5px;
-    text-align: justify;
-    font-family: 'Noto Sans Japanese';
-    font-size: 24px;
-}
-
-.left-bottom-row {
-    display: flex;
-    margin-top: 20px;
-    gap: 10px;
-}
-
-.left-bottom-row .hire-button {
-    background-color: #3b54df;
-    border: none;
-    padding: 5px 12px;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    color: white;
-    font-weight: 500;
-    border-radius: 5px;
-    font-family: 'Mulish';
-}
-
-.left-bottom-row .download-button {
-    background-color: #404764;
-    border: none;
-    padding: 5px 12px;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    color: white;
-    font-weight: 500;
-    border-radius: 5px;
-    font-family: 'Mulish';
-}
-
 .container-skill {
     background-color: #012a3f;
     text-align: center;
@@ -256,7 +152,7 @@ li a {
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .card-skill:hover {
@@ -266,7 +162,7 @@ li a {
     scale: 1.1;
     z-index: 2;
     position: relative;
-    transition: transform 0.3s ease-in;
+    transition: transform 0.5s ease-in;
 }
 
 .icon-skill img {
@@ -553,51 +449,142 @@ li a {
     line-height: 35px;
 }
 
-.footer {
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 0px -9px 10px -3px rgba(255, 255, 255, 0.1), 0px -10px 10px -3px rgba(255, 255, 255, 0.1);
-    padding: 40px 0px 40px;
-    text-align: center;
-    color: #00ffe1;
-    width: 65%;
-    margin: 85%;
-    margin: 50px auto 100px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer h1,
-.footer p {
-    background: linear-gradient(to right, #2121f3, #08e6ff, #cf23cf, #eedd44);
-    -webkit-background-clip: text;   
-    -webkit-text-fill-color: transparent; 
+.scroll-bg {
+    background: rgb(0, 0, 0);
+    width: 80%;
     margin: 10px auto;
+    padding: 50px 40px;
+    border-radius: 30px;
 }
 
-.footer p a {
-    color: #00ffe1;
+.scroll-bar {
+    width: 1000px;
+    background: rgb(38, 36, 36);
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 40px;
 }
 
-.animate-wave {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-    display: inline-block;
+.scroll {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    margin: 15px 0px;
 }
 
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+.scroll img {
+    width: 180px;
+    height: 230px;
+    margin: 3px;
+    border-radius: 10px;
+    cursor: pointer;
 }
-  
+
+.navbar-he {
+    display: flex;
+    padding-bottom: 30px;
+    margin: 10px;
+    padding-top: 0px;
+}
+
+.navbar-he img {
+    width: 150px;
+    height: 150px;
+    padding: 10px 80px;
+    border-radius: 100%;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.nick {
+    padding-top: -10px;
+}
+
+.nick h1 {
+    color: white;
+    font-family: 'Mulish';
+    font-size: 25px;
+    margin: 15px;
+    padding-top: 10px;
+    padding-left: -100px;
+    letter-spacing: 2px;
+}
+
+.nick h2 {
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-family: 'Mulish';
+    font-size: 20px;
+    padding: 15px;
+    
+}
+
+.loading-header {
+    padding: 10px;
+    margin: 5px;
+}
+
+.judul {
+    display: flex;
+}
+
+.judul p {
+    font-family: 'Noto Sans Japanese';
+    color: white;
+    padding-left: 40px;
+    font-size: 25px;
+}
+
+.judul h1 {
+    font-family: 'Noto Sans Japanese';
+    color: white;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.loading {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.g {
+    background-color: white;
+    width: 300px;
+    height: 9px;
+}
+
+.l {
+    background-color: white;
+    width: 275px;
+    height: 8px;
+}
+
+.h {
+    background-color: rgb(255, 102, 0);
+    width: 20px;
+    height: 9px;
+}
+
+.j {
+    background-color: rgb(255, 102, 0);
+    width: 40px;
+    height: 9px;
+}
+
+.n {
+    background-color: rgb(255, 102, 0);
+    width: 58px;
+    height: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
 @media only screen and (max-width: 1300px) {
     .about {
         padding: 50px;
